@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html suppressHydrationWarning={true} className='light' lang='en'>
       <head />
       <body className={clsx(fontSans.variable)}>
-        <Providers themeProps={{ attribute: 'class', defaultTheme: 'light', children }}>
+        <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark', children }}>
           <Nav />
           <main>{children}</main>
         </Providers>
